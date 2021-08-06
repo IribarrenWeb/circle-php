@@ -112,7 +112,7 @@ class Circle
 			$resource_instance = $reflectionClass->newInstanceArgs([
 				$this->getHttpClient(),
 				$api_key,
-				$this->plaidEnvironments[$this->environment]
+				$this->circleEnvironments[$this->environment]
 			]);
 
 			$this->resource_cache[$resource] = $resource_instance;
