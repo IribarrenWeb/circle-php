@@ -9,9 +9,9 @@ use ReflectionClass;
 use UnexpectedValueException;
 
 /**
- * @property \Circle\Resources\Payments $payments
- * @property \Circle\Resources\Encryption $encryption
- * @property \Circle\Resources\Payouts $payouts
+ * @property \Keinher\Circle\Resources\Payments $payments
+ * @property \Keinher\Circle\Resources\Encryption $encryption
+ * @property \Keinher\Circle\Resources\Payouts $payouts
  */
 class Circle
 {
