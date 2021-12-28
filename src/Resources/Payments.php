@@ -97,7 +97,7 @@ class Payments extends AbstractResource
 			"billingDetails" => $billing->toArray(),
 			"expMonth" => $expMonth,
 			"expYear" => $expYear,
-			"metadata" => $userMetadata
+			"metadata" => $userMetadata->toArray()
 		];
 
 		return $this->sendRequest(
@@ -123,7 +123,7 @@ class Payments extends AbstractResource
 		$params = [
 			"plaidProcessorToken" => $plaidToken,
 			"billingDetails" => $billing->toArray(),
-			"metadata" => $userMetadata
+			"metadata" => $userMetadata->toArray()
 		];
 
 		return $this->sendRequest(
