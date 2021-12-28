@@ -24,7 +24,7 @@ abstract class AbstractResource
 	 *
 	 * @var string
 	 */
-	protected $idempotency_key;
+	protected $idempotencyKey;
 
 	/**
 	 * Plaid client Id.
@@ -59,7 +59,7 @@ abstract class AbstractResource
 	) {
 		$this->httpClient = $httpClient;
 		$this->api_key = $api_key;
-		$this->idempotency_key = $this->getIdempotencyKey();
+		$this->idempotencyKey = $this->getIdempotencyKey();
 		$this->hostname = $hostname;
 	}
 
@@ -72,7 +72,7 @@ abstract class AbstractResource
 	protected function paramsWithClientCredentials(array $params = []): array
 	{
 		return \array_merge([
-			"idempotency_key" => $this->idempotency_key,
+			"idempotencyKey" => $this->idempotencyKey,
 		], $params);
 	}
 
