@@ -4,7 +4,7 @@ namespace Keinher\Circle\Resources;
 
 class Payouts extends AbstractResource
 {
-    protected $idempotency_key;
+    protected $idempotencyKey;
 
     /**
      * Create a payout
